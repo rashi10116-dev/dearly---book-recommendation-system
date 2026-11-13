@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "dataset_provenance": "Curated Open Literature Benchmark Dataset for Recommender Systems (v2.0)",
+    "random_seed": 42,
+    "evaluated_users": 6,
+    "evaluated_items": 35,
+    "evaluated_interactions": 36,
+    "test_protocol": "User-level held-out split (35% test) with binary relevance threshold (rating >= 4.0)"
+  },
+  "results": {
+    "Popularity Baseline": {
+      "p@5": 0.0333,
+      "p@10": 0.05,
+      "r@5": 0.0556,
+      "r@10": 0.1667,
+      "ndcg@5": 0.0303,
+      "ndcg@10": 0.0775,
+      "ild@5": 0.9759,
+      "ild@10": 0.9791,
+      "epc@5": 0.04,
+      "epc@10": 0.0862
+    },
+    "Content-Based (TF-IDF alone)": {
+      "p@5": 0.2667,
+      "p@10": 0.1667,
+      "r@5": 0.6667,
+      "r@10": 0.7778,
+      "ndcg@5": 0.5556,
+      "ndcg@10": 0.6064,
+      "ild@5": 0.9494,
+      "ild@10": 0.9694,
+      "epc@5": 0.3597,
+      "epc@10": 0.3568
+    },
+    "DEARLY (TF-IDF + MMR + Anti-Popularity)": {
+      "p@5": 0.3,
+      "p@10": 0.1833,
+      "r@5": 0.7222,
+      "r@10": 0.8333,
+      "ndcg@5": 0.5623,
+      "ndcg@10": 0.6149,
+      "ild@5": 0.9552,
+      "ild@10": 0.9745,
+      "epc@5": 0.452,
+      "epc@10": 0.377
+    }
+  }
+}
